@@ -7,4 +7,5 @@ Please contribute.
 Some questions and answers are stolen from:
 
 https://danielmiessler.com/study/infosec_interview_questions/
+
 https://www.netmeister.org/blog/security-questions.html
