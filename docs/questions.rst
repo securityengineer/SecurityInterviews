@@ -6,7 +6,7 @@ Cryptography
 
 * What’s the difference between encoding, encryption, and hashing?
 
-* How should you store a password?
+* How should you safely store a password?
 
 * What’s the difference between symmetric and public-key (asymmetric) cryptography?
 * What are some scenarios where one is more appropriate then the other?
@@ -16,13 +16,14 @@ Cryptography
 * What kind of attack is a standard diffie-hellman exchange vulnerable to?
 	MITM
 
-* How do you generate a random number?
+* How do you safely generate a random number?
 * What's wrong with your standard RNG?
 
 * Describe HMAC in detail.
 
-* Describe encryption modes, CTR, ECB, CBC.
+* Describe encryption modes, CTR, ECB, CBC, GCM.
 
+* What's good and bad about TOFU?
 
 DNS
 ---
@@ -31,9 +32,13 @@ DNS
 	DNS goes over TCP when the size of the request or the response is greater than a single packet such as with responses that have many records or many IPv6 responses or most DNSSEC responses. Some resolver implementations use TCP for all queries.
 * How does a DNS Amplification Attack work?
 	Open Recursion + Amplification = DDoS on Steroids
-	Spoofed ANY requests.
+
+	ANY requests normally give the biggest response, so they're typically used.
 * What are some different DNS record types and when are they used?
 * What do you have to worry about when running your own DNS servers?
+* How can you use DNS for instrusion detection?
+	https://blogs.technet.microsoft.com/office365security/dns-intrusion-detection-in-office-365/
+* How many root servers are there?
 
 Incident Response
 -----------------
@@ -61,10 +66,15 @@ Miscellaneous
 * Have you ever worked with someone you disliked before?
 * Why are you interested in working at Company?
 * Have you ever used the product before?
-* Describe what happens when you type www.google.com?
+* Describe what happens when you type www.google.com and hit Enter?
 * What type of work environment would you dislike and why?
 * What kind of work do you enjoy the most and why?
-* If you had unlimited time and money what would you work on?
+* If you had unlimited time and money and could work on anything, what would you work on?
+* Describe your past relationships with other engineering teams.
+* Have you ever had to stop an engineer from pushing code that had security issues?
+* Where do you see yourself in 5 years?
+* Open ended threat modeling questions.
+	Maybe read https://www.amazon.com/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998 but if you're a competent security professional these should be the easier part of the interview.
 
 Mobile
 ------
@@ -86,6 +96,7 @@ Network Security
 * How does an IPS work?
 * How can an IDS or IPS be bypassed?
 * How would you go about securing a web server?
+* How does nmap work?
 
 
 Programming Languages (Computer Science)
@@ -94,6 +105,12 @@ Programming Languages (Computer Science)
 * What is the difference between a strongly typed language and a statically typed language?
 	https://stackoverflow.com/questions/2690544/what-is-the-difference-between-a-strongly-typed-language-and-a-statically-typed
 
+Reverse Engineering
+-------------------
+
+* Calling conventions, x86 and x64
+* If you were given a binary that was stripped of it's symbols, how would you get them back?
+* If you were given a DLL whose preferred base address conflicted with another, how in IDA would you make the addresses match what you see in say, OllyDbg?
 
 SSL/TLS
 -------
