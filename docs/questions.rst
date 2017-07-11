@@ -25,8 +25,10 @@ Cryptography
 
 * What's good and bad about TOFU?
 
-How do collisions in hash functions affect security (in theory and in practice)?
+* How do collisions in hash functions affect security (in theory and in practice)?
 
+* Should you authenticate then encrypt, or encrypt then authenticate or encrypt and authenticate at the same time? Why?
+	Encrypt and then authenticate, because otherwise you'll have to decrypt before checking the authenticity of the plaintext. This has caused all sorts of problems with, for example, SSL, leading to POODLE, Lucky13, BEAST, CRIME and other acronyms. See https://moxie.org/blog/the-cryptographic-doom-principle/ for more information.
 
 DNS
 ---
@@ -56,6 +58,7 @@ Infrastructure Security
 * Explain how SSH tunneling / port forwarding works. What are some pitfalls or risks?
 * How does sudo(1) work? What are common related pitfalls?
 * What is the difference in permissions on a directory that is mode 0777 and one that is mode 1777?
+	The 1 is what is called the sticky bit. A directory whose sticky bit is set becomes an append-only directory, or, more accurately, a directory in which the deletion of files is restricted. A file in a sticky directory may only be removed or renamed by a user if the user has write permission for the directory and the user is the owner of the file, the owner of the directory, or the super-user.
 
 Incident Response
 -----------------
