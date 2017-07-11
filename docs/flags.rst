@@ -23,6 +23,7 @@ Yellow Flags
 
 * Asks "What is the difference between HTTPS and SSL?"
 * Asks "What protocol does DNS use?"
+* Asks "Is closed or open source software more secure?"
 * Doesn't pay money in their bug bounty.
 * They don't look at your work-sample test before your in-person.
 

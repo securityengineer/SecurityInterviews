@@ -21,11 +21,23 @@ Know one language and know it well!
 
 Know recursion, BFS, DFS and some companies ask about Big O.
 
-Sample Questions, which there are solutions for, but you shouldn't look at any of the solutions before writing your own.
+Sample Questions, some of which there are solutions for, but you shouldn't look at any of the solutions before writing your own.
 
 * Write a function that returns whether or not a number is a power of 2.
-* Create a linked list that supported add and remove. Numbers are added in ascending order, so if the list was 1,3,5 and 4 was added it would look like 1,3,4,5.
+
+* Create a linked list that supported add and remove. Numbers are added in ascending order, so if the 
+list was 1,3,5 and 4 was added it would look like 1,3,4,5.
+
 * The recursion chapter of Cracking the Coding Interview.
+
+* You are tasked with designing software that runs and controls elevators. Explain the defaults for all options available in your implementation. What safety precautions do you have to build in? What interfaces and class objects would you use? What configuration options would you need for the software to work in skyscrapers, buildings with only one elevator, and buildings with banks of elevators? How would these use cases change the objects and interfaces in your design?
+
+* How do you find all the permutations of a string? What is the running time?
+* Now imagine that the string has repeating characters. How could you modify your solution so it would only find unique permutations as efficiently as possible?
+
+* Implement a game of tic-tac-toe. How do you represent the game board? What interfaces do you expose?
+
+* Write a function that takes two strings as arguments and returns a string containing only the characters found in both strings. Have them write 2 versions – one that is O(n) and one that is O(n^2).
 
 If they tell you the answer instead of nudge, you failed it, I'm sorry.
 

@@ -25,6 +25,9 @@ Cryptography
 
 * What's good and bad about TOFU?
 
+How do collisions in hash functions affect security (in theory and in practice)?
+
+
 DNS
 ---
 * How does DNS work?
@@ -40,12 +43,29 @@ DNS
 	https://blogs.technet.microsoft.com/office365security/dns-intrusion-detection-in-office-365/
 * How many root servers are there?
 
+Infrastructure Security
+-----------------------
+
+* How do you bootstrap trust amongst hosts?
+* How do you handle SSH host keys?
+* ssh(1) warns you about a hostkey fingerprint mismatch. What do you do? (No, be honest.) How do you solve this problem?
+* What are the top 3 things you do to improve a system's security?
+* How do you manage / utilize shared jumpboxes in your environment? What are some of the implications and pitfalls of having them?
+* Are there alternatives to storing passwords?
+* Why should or shouldn't you have . (dot) in your PATH?
+* Explain how SSH tunneling / port forwarding works. What are some pitfalls or risks?
+* How does sudo(1) work? What are common related pitfalls?
+* What is the difference in permissions on a directory that is mode 0777 and one that is mode 1777?
+
 Incident Response
 -----------------
 * What sort of anomalies would you look for to identify a compromised system?
+* Tell me about a security incident you've taken part in, what was your role in the response?
 
 Memory Corruption
 -----------------
+* What are common pitfalls in string handling?
+* What is a buffer overflow?
 * What is DEP?
 * What is ASLR?
 * How does ROP work?
@@ -115,6 +135,7 @@ Reverse Engineering
 SSL/TLS
 -------
 * How does SSL work?
+* How does SSL certificate verification work?
 * How would you design an internal CA?
 * Describe the process of a TLS session being set up when someone visits a secure website.
 * How does HSTS work?
@@ -171,3 +192,5 @@ Web Security
 
 * How does OAuth work?
 * How does SAML work?
+
+* Your login process requires a password. Talk about the UI decisions around this. What tradeoffs do you make between password complexity requirements and usability? How do you design the user feedback for repeatedly entered wrong passwords?
